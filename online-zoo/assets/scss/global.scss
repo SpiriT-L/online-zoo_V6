@@ -1,0 +1,32 @@
+$bg-header: #000000;
+$bg-fotter: #111115;
+// $bg: #e5e5e5;
+$bg: #ffffff;
+$yellow: #ffee2e;
+$green: #4b9200;
+$black_blue: #333b41;
+$white: #fff;
+$bg-sidebar-icon: #fff;
+$orange: #f9804b;
+$Orange_grad: #fed290;
+$pink-gradient: FEBDAB;
+$rad: #d31414;
+$gray: #767474;
+$gray-smoky: #ababab;
+$light-gray: #f1f3f2;
+$frosted-glass-white: #fdfdff;
+
+body {
+  max-width: 1600px;
+  font-family: Roboto;
+  font-style: normal;
+  margin: 0 auto;
+  background: $bg;
+}
+
+.container {
+  display: flex;
+  position: relative;
+  min-width: 1160px;
+  margin: 0 auto;
+}

@@ -1,0 +1,539 @@
+@mixin btn {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 140%;
+}
+
+@mixin btn2 {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+@mixin h1 {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 106.496px;
+  // line-height: 75%;
+}
+
+@mixin h2 {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 48px;
+  // line-height: 120%;
+}
+@mixin h3 {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 130%;
+}
+
+@mixin subtitle {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 120%;
+}
+
+@mixin body {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  // line-height: 140%;
+}
+
+@mixin body2 {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 140%;
+}
+
+@mixin small-paragraph {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  // line-height: 120%;
+}
+
+@mixin name {
+}
+
+@mixin btn_1 {
+  width: 298px;
+  height: 54px;
+  background: linear-gradient(113.96deg, #f9804b 1.49%, #fe9013 101.44%);
+  border-radius: 25px;
+  outline: 0;
+  border: 0;
+  cursor: pointer;
+  &:active {
+    background: $green;
+    cursor: pointer;
+    outline: 0;
+    border: 0;
+  }
+  &:hover {
+    opacity: 0.95;
+    cursor: pointer;
+    outline: 0;
+    border: 0;
+  }
+  &:focus {
+    opacity: 1;
+    cursor: pointer;
+    outline: 0;
+    border: 0;
+  }
+}
+
+@mixin btn_1_activ {
+  width: 298px;
+  height: 54px;
+  background: $green;
+  border-radius: 25px;
+  outline: 0;
+  border: 0;
+  cursor: pointer;
+  &:active {
+    background: linear-gradient(113.96deg, #f9804b 1.49%, #fe9013 101.44%);
+    cursor: pointer;
+    outline: 0;
+    border: 0;
+  }
+  &:hover {
+    opacity: 0.95;
+    cursor: pointer;
+    outline: 0;
+    border: 0;
+  }
+  &:focus {
+    opacity: 1;
+    cursor: pointer;
+    outline: 0;
+    border: 0;
+  }
+}
+
+@mixin btn_2 {
+  width: 298px;
+  height: 54px;
+  background: linear-gradient(113.96deg, #f9804b 1.49%, #fe9013 101.44%);
+  border-radius: 5px;
+  cursor: pointer;
+  outline: 0;
+  border: 0;
+  &:active {
+    background: $green;
+    cursor: pointer;
+    outline: 0;
+    border: 0;
+  }
+  &:hover {
+    opacity: 0.95;
+    cursor: pointer;
+    outline: 0;
+    border: 0;
+  }
+  &:focus {
+    opacity: 1;
+    cursor: pointer;
+    outline: 0;
+    border: 0;
+  }
+}
+
+@mixin tooltip {
+  [data-tooltip] {
+    position: relative; /* Относительное позиционирование */
+  }
+  [data-tooltip]::after {
+    content: attr(data-tooltip); /* Выводим текст */
+    position: absolute; /* Абсолютное позиционирование */
+    width: 300px; /* Ширина подсказки */
+    left: 0;
+    top: 0; /* Положение подсказки */
+    background: #3989c9; /* Синий цвет фона */
+    color: #fff; /* Цвет текста */
+    padding: 0.5em; /* Поля вокруг текста */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Параметры тени */
+    pointer-events: none; /* Подсказка */
+    opacity: 0; /* Подсказка невидима */
+    transition: 1s; /* Время появления подсказки */
+  }
+  [data-tooltip]:hover::after {
+    opacity: 1; /* Показываем подсказку */
+    top: 2em; /* Положение подсказки */
+  }
+}
+
+$bg-header: #000000;
+$bg-fotter: #111115;
+// $bg: #e5e5e5;
+$bg: #ffffff;
+$yellow: #ffee2e;
+$green: #4b9200;
+$black_blue: #333b41;
+$white: #fff;
+$bg-sidebar-icon: #fff;
+$orange: #f9804b;
+
+//Sidebar start
+.sidebar {
+  // position: relative;
+  position: sticky;
+  width: 100px;
+  height: 652px;
+  top: 30px;
+  // margin-bottom: 50px;
+  // margin-bottom: 833px;
+  margin-top: 112px;
+  margin-left: 30px;
+  margin-right: 90px;
+  background: linear-gradient(
+      315.75deg,
+      rgba(254, 210, 144, 0.7) 30.06%,
+      #febdab 100.95%,
+      rgba(254, 210, 144, 0.7) 106.36%
+    ),
+    linear-gradient(
+      315.75deg,
+      rgba(254, 189, 171, 0.74) 30.06%,
+      rgba(243, 169, 248, 0.66) 50.74%,
+      #e0d8f0 80.49%,
+      #eaf7fe 127.9%,
+      #eaf7fe 149.54%
+    ),
+    linear-gradient(
+      315.75deg,
+      rgba(254, 189, 171, 0.74) 30.06%,
+      rgba(243, 169, 248, 0.66) 50.74%,
+      #e0d8f0 80.49%,
+      #eaf7fe 127.9%,
+      #eaf7fe 149.54%
+    );
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sidebar_icons {
+  display: flex;
+  flex-direction: column;
+  padding-top: 16px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin: 0;
+}
+
+.sidebar__icon {
+  position: relative;
+  width: 76px;
+  height: 76px;
+  margin-bottom: 10px;
+  border-radius: 50%;
+  background: $bg-sidebar-icon;
+  border: 2px solid rgba(249, 128, 75, 1);
+  list-style-type: none;
+  cursor: pointer;
+  &:active,
+  &:hover,
+  &:focus {
+    border: 2px solid $green;
+  }
+}
+
+.sidebar__icon_activ {
+  position: relative;
+  width: 76px;
+  height: 76px;
+  margin-bottom: 10px;
+  border-radius: 50%;
+  background: $bg-sidebar-icon;
+  border: 2px solid $green;
+  list-style-type: none;
+  cursor: default;
+}
+
+.icon_gorilla {
+  position: absolute;
+  width: 55px;
+  height: 47px;
+  left: 13px;
+  top: 16px;
+  background: url(../../assets/images/icons/sidebar_gorilla_icon.svg) no-repeat
+    center;
+  z-index: 1;
+  &:active,
+  &:hover,
+  &:focus,
+  &:visited {
+    position: absolute;
+    width: 55px;
+    height: 47px;
+    left: 13px;
+    top: 16px;
+    background: url(../../assets/images/icons/sidebar_gorilla_icon_a.svg)
+      no-repeat center;
+    z-index: 1;
+  }
+}
+
+.active_gorilla {
+  position: absolute;
+  width: 55px;
+  height: 47px;
+  left: 13px;
+  top: 16px;
+  background: url(../../assets/images/icons/sidebar_gorilla_icon_a.svg)
+    no-repeat center;
+  z-index: 1;
+  cursor: default;
+}
+
+.icon_alligator {
+  position: absolute;
+  width: 64px;
+  height: 30px;
+  left: 8px;
+  top: 25px;
+  background: url(../../assets/images/icons/sidebar_alligator_icon.svg)
+    no-repeat center;
+  z-index: 1;
+  &:active,
+  &:hover,
+  &:focus {
+    position: absolute;
+    width: 64px;
+    height: 30px;
+    left: 8px;
+    top: 25px;
+    background: url(../../assets/images/icons/sidebar_alligator_icon_a.svg)
+      no-repeat center;
+    z-index: 1;
+  }
+}
+
+.active_alligator {
+  position: absolute;
+  width: 64px;
+  height: 30px;
+  left: 8px;
+  top: 25px;
+  background: url(../../assets/images/icons/sidebar_alligator_icon_a.svg)
+    no-repeat center;
+  z-index: 1;
+  cursor: default;
+}
+
+.icon_panda {
+  position: absolute;
+  width: 58px;
+  height: 42px;
+  left: 7px;
+  top: 19px;
+  background: url(../../assets/images/icons/sidebar_panda_icon.svg) no-repeat
+    center;
+  z-index: 1;
+  &:active,
+  &:hover,
+  &:focus {
+    position: absolute;
+    width: 58px;
+    height: 42px;
+    left: 7px;
+    top: 19px;
+    background: url(../../assets/images/icons/sidebar_panda_icon_a.svg)
+      no-repeat center;
+    z-index: 1;
+  }
+}
+
+.active_panda {
+  position: absolute;
+  width: 58px;
+  height: 42px;
+  left: 7px;
+  top: 19px;
+  background: url(../../assets/images/icons/sidebar_panda_icon_a.svg) no-repeat
+    center;
+  z-index: 1;
+  cursor: default;
+}
+
+// .icon__activ {
+//   position: absolute;
+//   width: 58px;
+//   height: 42px;
+//   left: 7px;
+//   top: 19px;
+//   fill: $green;
+//   color: $green;
+//   cursor: default;
+//   // background-color: $green;
+// }
+
+.icon_eagle {
+  position: absolute;
+  width: 54px;
+  height: 48px;
+  left: 13px;
+  top: 16px;
+  background: url(../../assets/images/icons/sidebar_eagle_icon.svg) no-repeat
+    center;
+  z-index: 1;
+  &:active,
+  &:hover,
+  &:focus {
+    position: absolute;
+    width: 54px;
+    height: 48px;
+    left: 13px;
+    top: 16px;
+    background: url(../../assets/images/icons/sidebar_eagle_icon_a.svg)
+      no-repeat center;
+    z-index: 1;
+  }
+}
+
+.active_eagle {
+  position: absolute;
+  width: 54px;
+  height: 48px;
+  left: 13px;
+  top: 16px;
+  background: url(../../assets/images/icons/sidebar_eagle_icon_a.svg) no-repeat
+    center;
+  z-index: 1;
+  cursor: default;
+}
+
+.icon_sloth {
+  position: absolute;
+  width: 54px;
+  height: 48px;
+  left: 13px;
+  top: 16px;
+  background: url(../../assets/images/icons/sidebar_sloth_icon.svg) no-repeat
+    center;
+  z-index: 1;
+  &:active,
+  &:hover,
+  &:focus {
+    position: absolute;
+    width: 54px;
+    height: 48px;
+    left: 13px;
+    top: 16px;
+    background: url(../../assets/images/icons/sidebar_sloth_icon_a.svg)
+      no-repeat center;
+    z-index: 1;
+  }
+}
+
+.active_sloth {
+  position: absolute;
+  width: 54px;
+  height: 48px;
+  left: 13px;
+  top: 16px;
+  background: url(../../assets/images/icons/sidebar_sloth_icon_a.svg) no-repeat
+    center;
+  z-index: 1;
+  cursor: default;
+}
+
+.icon_penguin {
+  position: absolute;
+  width: 32px;
+  height: 58.5px;
+  left: 24px;
+  top: 11px;
+  background: url(../../assets/images/icons/sidebar_penguin_icon.svg) no-repeat
+    center;
+  z-index: 1;
+  &:active,
+  &:hover,
+  &:focus {
+    position: absolute;
+    width: 32px;
+    height: 58.5px;
+    left: 24px;
+    top: 11px;
+    background: url(../../assets/images/icons/sidebar_penguin_icon_a.svg)
+      no-repeat center;
+    z-index: 1;
+  }
+}
+
+.active_penguin {
+  position: absolute;
+  width: 32px;
+  height: 58.5px;
+  left: 24px;
+  top: 11px;
+  background: url(../../assets/images/icons/sidebar_penguin_icon_a.svg)
+    no-repeat center;
+  z-index: 1;
+  cursor: default;
+}
+
+.down_arrow {
+  position: absolute;
+  width: 62px;
+  height: 62px;
+  left: 7px;
+  top: 7px;
+  background: url(../../assets/images/icons/arrow_elips_2_down.svg) no-repeat
+    center;
+  z-index: 1;
+  &:active,
+  &:hover,
+  &:focus {
+    position: absolute;
+    width: 62px;
+    height: 62px;
+    left: 7px;
+    top: 7px;
+    background: url(../../assets/images/icons/arrow_elips_2_down_a.svg)
+      no-repeat center;
+    z-index: 1;
+  }
+}
+
+.sidebar__icon:last-child {
+  margin-bottom: 0;
+}
+
+.active {
+  position: relative;
+  width: 76px;
+  height: 76px;
+  margin-bottom: 10px;
+  border-radius: 50%;
+  background: $bg-sidebar-icon;
+  border: 2px solid $green;
+  list-style-type: none;
+  cursor: default;
+}
+
+.noactive {
+  pointer-events: none;
+  cursor: default;
+}
+
+//sidebar end

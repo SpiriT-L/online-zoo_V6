@@ -1,0 +1,9 @@
+body {
+  max-width: 1600px;
+  font-family: Roboto;
+  font-style: normal;
+}
+
+.container {
+  max-width: 1160px;
+}
