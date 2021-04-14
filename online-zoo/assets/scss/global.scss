@@ -1,3 +1,8 @@
+@import 'normalize';
+@import 'fonts';
+// @import 'global';
+@import 'mixin';
+
 $bg-header: #000000;
 $bg-fotter: #111115;
 // $bg: #e5e5e5;
@@ -8,25 +13,54 @@ $black_blue: #333b41;
 $white: #fff;
 $bg-sidebar-icon: #fff;
 $orange: #f9804b;
-$Orange_grad: #fed290;
-$pink-gradient: FEBDAB;
-$rad: #d31414;
-$gray: #767474;
-$gray-smoky: #ababab;
-$light-gray: #f1f3f2;
-$frosted-glass-white: #fdfdff;
 
 body {
-  max-width: 1600px;
+  height: 100%;
   font-family: Roboto;
   font-style: normal;
+  min-width: 320px;
+}
+
+.wrapper {
+  max-width: 1600px;
   margin: 0 auto;
-  background: $bg;
+  @media (width: 1000px) {
+    max-width: 1000px;
+    // margin: 0 auto;
+  }
+  @media (width: 640px) {
+    max-width: 640px;
+    // margin: 0 auto;
+  }
+  @media (width: 320px) {
+    max-width: 320px;
+    // margin: 0 auto;
+  }
 }
 
 .container {
   display: flex;
-  position: relative;
-  min-width: 1160px;
+  width: 1160px;
   margin: 0 auto;
+  @media (width: 1000px) {
+    max-width: 940px;
+  }
+  @media (width: 640px) {
+    max-width: 600px;
+  }
+  @media (width: 320px) {
+    max-width: 300px;
+  }
+}
+// main {
+//   height: 100vh;
+// }
+
+.btn__fonts-donate {
+  @include btn-fonts;
+  font-size: 16px;
+  line-height: 140%;
+  text-align: center;
+  text-transform: uppercase;
+  color: $white;
 }
