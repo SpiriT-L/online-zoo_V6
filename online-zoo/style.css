@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -639,6 +640,142 @@ p {
   font-size: 16px;
   line-height: 130%;
   color: #333b41;
+}
+
+.carousel__pets {
+  display: flex;
+  flex-wrap: wrap;
+  /* width: calc(100% / 3); */
+  height: 100%;
+  /* flex-direction: row; */
+  flex-flow: row nowrap;
+}
+
+.container__grid {
+  width: 1160px;
+  margin: 0 auto;
+  margin-bottom: 60px;
+}
+@media (width: 1000px) {
+  .container__grid {
+    max-width: 940px;
+  }
+}
+@media (width: 640px) {
+  .container__grid {
+    max-width: 600px;
+  }
+}
+@media (width: 320px) {
+  .container__grid {
+    max-width: 300px;
+  }
+}
+
+.carousel__pets-card {
+  width: 366px;
+  margin-right: 30px;
+  margin-bottom: 20px;
+}
+.carousel__pets-card:last-child {
+  margin-right: 0;
+  margin-bottom: 0;
+}
+
+.animals__card {
+  position: relative;
+  width: 366px;
+  height: 366px;
+  left: 0px;
+  top: 0px;
+  border: 1px solid #fe9013;
+  box-sizing: border-box;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.zoom__card {
+  display: inline-block;
+  overflow: hidden;
+}
+.zoom__card img {
+  transition: 1s;
+  /* Время эффекта */
+  display: block;
+  /* Убираем небольшой отступ снизу */
+}
+.zoom__card img:hover {
+  transform: scale(1.1);
+  /* Увеличиваем масштаб */
+}
+
+.animals__card_thamb {
+  width: 364px;
+  height: 366px;
+  border-radius: 5px 5px 0 0;
+}
+
+.animals__card_info {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  position: absolute;
+  background: #000;
+  opacity: 0.7;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.block__animal_info {
+  margin-left: 16px;
+}
+
+.zoom__info {
+  position: absolute;
+  bottom: 0;
+  z-index: 100;
+  width: 100%;
+  overflow: hidden;
+  height: 0;
+  transition: all 0.6s linear;
+}
+
+.animals__card:hover .zoom__info {
+  height: auto;
+}
+
+.title__card {
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.native__animals {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 120%;
+  margin-bottom: 14px;
+  color: #fff;
+}
+
+.bamboo_icon {
+  position: absolute;
+  width: 33px;
+  height: 37px;
+  left: 305px;
+}
+
+.banana {
+  background: url(./assets/images/icons/banana-bamboo_icon.svg) no-repeat;
+}
+
+.meet-fish {
+  background: url(./assets/images/icons/meet-fish_icon.svg) no-repeat;
 }
 
 .footer {
