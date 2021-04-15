@@ -418,3 +418,31 @@ main {
   text-transform: uppercase;
   color: #fff;
 }
+
+.arrow-l {
+  width: 62px;
+  height: 62px;
+  background: url(./assets/images/svg/button-pets-l-def.svg) no-repeat center;
+}
+.arrow-l:active {
+  width: 62px;
+  height: 62px;
+  background: url(./assets/images/svg/button-pets-l-activ.svg) no-repeat center;
+}
+.arrow-l:hover {
+  cursor: pointer;
+}
+
+.arrow-r {
+  width: 62px;
+  height: 62px;
+  background: url(./assets/images/svg/button-pets-r-def.svg) no-repeat center;
+}
+.arrow-r:active {
+  width: 62px;
+  height: 62px;
+  background: url(./assets/images/svg/button-pets-r-activ.svg) no-repeat center;
+}
+.arrow-r:hover {
+  cursor: pointer;
+}

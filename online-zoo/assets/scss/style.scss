@@ -177,16 +177,16 @@ p {
   display: flex;
   flex-wrap: wrap;
   /* width: calc(100% / 3); */
-  height: 100%;
+  // height: 100%;
   /* flex-direction: row; */
-  flex-flow: row nowrap;
+  // flex-flow: row nowrap;
 }
 
 .container__grid {
   // display: flex;
   width: 1160px;
   margin: 0 auto;
-  margin-bottom: 60px;
+  // margin-bottom: 60px;
   @media (width: 1000px) {
     max-width: 940px;
   }
@@ -198,6 +198,10 @@ p {
   }
 }
 
+.caruos__card {
+  width: 1160px;
+  // margin-bottom: 60px;
+}
 .carousel__pets-card {
   width: 366px;
   margin-right: 30px;
@@ -301,6 +305,46 @@ p {
 
 .meet-fish {
   background: url(./assets/images/icons/meet-fish_icon.svg) no-repeat;
+}
+
+.btn__arrow-l {
+  position: relative;
+  width: 62px;
+  height: 62px;
+  left: -80px;
+  bottom: 580px;
+}
+
+.btn__arrow-r {
+  position: relative;
+  width: 62px;
+  height: 62px;
+  left: 1180px;
+  bottom: 642px;
+}
+
+.btn1__animals {
+  position: relative;
+  margin: 0 auto;
+  margin-bottom: 100px;
+}
+
+.btn1__animals {
+  left: calc(50% - 298px / 2);
+  top: 60px;
+}
+
+.btn1__item {
+  @include btn-fonts;
+  line-height: 140%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  &:active {
+    background: $green;
+    border-radius: 25px;
+    border-color: $green;
+  }
 }
 
 // SECTION CAROUSEL PETS END
@@ -534,6 +578,54 @@ input[placeholder='Enter your email'] {
     }
   }
 }
+
+// .pets__btn_l {
+//   display: flex;
+//   align-items: center;
+//   position: absolute;
+//   align-self: center;
+//   left: 138px;
+//   top: 356px;
+// }
+
+// .pets__btn_r {
+//   display: flex;
+//   align-items: center;
+//   position: absolute;
+//   align-self: center;
+//   right: 138px;
+//   top: 356px;
+// }
+
+// .pets__button_l {
+//   width: 62px;
+//   height: 62px;
+//   background: url(./assets/images/svg/button-pets-l-def.svg) no-repeat center;
+//   &:active {
+//     width: 62px;
+//     height: 62px;
+//     background: url(./assets/images/svg/button-pets-l-activ.svg) no-repeat
+//       center;
+//   }
+//   &:hover {
+//     cursor: pointer;
+//   }
+// }
+
+// .pets__button_r {
+//   width: 62px;
+//   height: 62px;
+//   background: url(./assets/images/svg/button-pets-r-def.svg) no-repeat center;
+//   &:active {
+//     width: 62px;
+//     height: 62px;
+//     background: url(./assets/images/svg/button-pets-r-activ.svg) no-repeat
+//       center;
+//   }
+//   &:hover {
+//     cursor: pointer;
+//   }
+// }
 
 // .fb {
 //   color: $white;

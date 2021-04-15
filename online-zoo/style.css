@@ -420,6 +420,34 @@ main {
   color: #fff;
 }
 
+.arrow-l {
+  width: 62px;
+  height: 62px;
+  background: url(./assets/images/svg/button-pets-l-def.svg) no-repeat center;
+}
+.arrow-l:active {
+  width: 62px;
+  height: 62px;
+  background: url(./assets/images/svg/button-pets-l-activ.svg) no-repeat center;
+}
+.arrow-l:hover {
+  cursor: pointer;
+}
+
+.arrow-r {
+  width: 62px;
+  height: 62px;
+  background: url(./assets/images/svg/button-pets-r-def.svg) no-repeat center;
+}
+.arrow-r:active {
+  width: 62px;
+  height: 62px;
+  background: url(./assets/images/svg/button-pets-r-activ.svg) no-repeat center;
+}
+.arrow-r:hover {
+  cursor: pointer;
+}
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -646,15 +674,12 @@ p {
   display: flex;
   flex-wrap: wrap;
   /* width: calc(100% / 3); */
-  height: 100%;
   /* flex-direction: row; */
-  flex-flow: row nowrap;
 }
 
 .container__grid {
   width: 1160px;
   margin: 0 auto;
-  margin-bottom: 60px;
 }
 @media (width: 1000px) {
   .container__grid {
@@ -670,6 +695,10 @@ p {
   .container__grid {
     max-width: 300px;
   }
+}
+
+.caruos__card {
+  width: 1160px;
 }
 
 .carousel__pets-card {
@@ -776,6 +805,47 @@ p {
 
 .meet-fish {
   background: url(./assets/images/icons/meet-fish_icon.svg) no-repeat;
+}
+
+.btn__arrow-l {
+  position: relative;
+  width: 62px;
+  height: 62px;
+  left: -80px;
+  bottom: 580px;
+}
+
+.btn__arrow-r {
+  position: relative;
+  width: 62px;
+  height: 62px;
+  left: 1180px;
+  bottom: 642px;
+}
+
+.btn1__animals {
+  position: relative;
+  margin: 0 auto;
+  margin-bottom: 100px;
+}
+
+.btn1__animals {
+  left: calc(50% - 298px / 2);
+  top: 60px;
+}
+
+.btn1__item {
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.btn1__item:active {
+  background: #4b9200;
+  border-radius: 25px;
+  border-color: #4b9200;
 }
 
 .footer {

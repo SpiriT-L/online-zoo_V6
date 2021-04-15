@@ -81,3 +81,32 @@ main {
   text-transform: uppercase;
   color: $white;
 }
+
+.arrow-l {
+  width: 62px;
+  height: 62px;
+  background: url(./assets/images/svg/button-pets-l-def.svg) no-repeat center;
+  &:active {
+    width: 62px;
+    height: 62px;
+    background: url(./assets/images/svg/button-pets-l-activ.svg) no-repeat
+      center;
+  }
+  &:hover {
+    cursor: pointer;
+  }
+}
+.arrow-r {
+  width: 62px;
+  height: 62px;
+  background: url(./assets/images/svg/button-pets-r-def.svg) no-repeat center;
+  &:active {
+    width: 62px;
+    height: 62px;
+    background: url(./assets/images/svg/button-pets-r-activ.svg) no-repeat
+      center;
+  }
+  &:hover {
+    cursor: pointer;
+  }
+}
