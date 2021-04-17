@@ -1,0 +1,17 @@
+@import '_global';
+@import '_header';
+
+.pages {
+  &__404 {
+    margin: 0 auto;
+    height: 750px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
+
+  // .pages__404-item
+
+  &__404-item {
+  }
+}
