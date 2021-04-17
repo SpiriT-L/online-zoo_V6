@@ -8,29 +8,28 @@
   font-family: Roboto;
   font-style: normal;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 1rem;
 }
 
 @mixin h1 {
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
-  font-size: 106.496px;
-  // line-height: 75%;
+  font-size: 6.652rem;
 }
 
 @mixin h2 {
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
-  font-size: 48px;
+  font-size: 3rem;
   // line-height: 120%;
 }
 @mixin h3 {
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
-  font-size: 36px;
+  font-size: 2.25rem;
   // line-height: 130%;
 }
 
@@ -38,7 +37,7 @@
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
-  font-size: 24px;
+  font-size: 1.5rem;
   // line-height: 120%;
 }
 
@@ -46,7 +45,7 @@
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
-  font-size: 16px;
+  font-size: 1rem;
   // line-height: 140%;
 }
 
@@ -54,7 +53,7 @@
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 140%;
 }
 
@@ -62,7 +61,7 @@
   font-family: Roboto;
   font-style: normal;
   font-weight: 300;
-  font-size: 15px;
+  font-size: 0.9375rem;
   // line-height: 120%;
 }
 
@@ -177,16 +176,7 @@
   }
 }
 
-$bg-header: #000000;
-$bg-fotter: #111115;
-// $bg: #e5e5e5;
-$bg: #ffffff;
-$yellow: #ffee2e;
-$green: #4b9200;
-$black_blue: #333b41;
-$white: #fff;
-$bg-sidebar-icon: #fff;
-$orange: #f9804b;
+
 
 // //Sidebar start
 // .sidebar {
