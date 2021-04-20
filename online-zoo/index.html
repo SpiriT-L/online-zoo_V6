@@ -8,196 +8,32 @@
     <title>Document</title>
   </head>
   <body>
-    <h1 class="h1__title">PetStory Online</h1>
     <div class="wrapper">
-      <header class="header">
-        <div class="header__container">
-          <div class="container__logo">
-            <a class="header__logo-link" href="./index.html"
-              ><img
-                class="logo-link"
-                src="./assets/images/svg/logo_footer.svg"
-                alt="online-zoo logo"
-            /></a>
-          </div>
-          <nav class="container__nav">
-            <ul class="container__nav_menu">
-              <li class="container__nav_menu-item">
-                <a
-                  class="container__nav_menu-link link-aktive"
-                  href="./index.html"
-                  >About</a
-                >
+      <header class="">
+        <div class="container header">
+          <a href="./index.html" class="logo__link">
+            <div class="header__logo logo"></div
+          ></a>
+          <nav class="header__nav">
+            <ul class="header__nav_menu">
+              <li class="nav__menu_item">
+                <a class="nav__menu_item-link" href="">About</a>
               </li>
-              <li class="container__nav_menu-item">
-                <a class="container__nav_menu-link" href="./pages/map/map.html"
-                  >Map</a
-                >
+              <li class="nav__menu_item">
+                <a class="nav__menu_item-link" href="">Map</a>
               </li>
-              <li class="container__nav_menu-item">
-                <a
-                  class="container__nav_menu-link"
-                  href="./pages/zoos/panda.html"
-                  >Zoos</a
-                >
+              <li class="nav__menu_item">
+                <a class="nav__menu_item-link" href="">Zoos</a>
               </li>
-              <li class="container__nav_menu-item">
-                <a class="container__nav_menu-link" href="./pages/404.html"
-                  >Contact us</a
-                >
-              </li>
-              <li class="container__nav_menu-item">
-                <a
-                  class="container__nav_menu-link"
-                  href="//www.figma.com/file/jfEFwkXVj1WRq7sUHDr8os/PetStory-online"
-                  >Designed by ©</a
-                >
+              <li class="nav__menu_item">
+                <a class="nav__menu_item-link" href="">Designed by ©</a>
               </li>
             </ul>
           </nav>
         </div>
       </header>
-      <main class="main">
-        <section class="section__animals">
-          <div class="section__animals_block">
-            <img
-              clacc="section__animals-bg"
-              src="./assets/images/giant-panda.png"
-              alt="panda"
-            />
-            <div class="section__animals_circle">
-              <h2 class="section__animals_circle-title h2__title">
-                Watch your <span>favorite</span> animal online
-              </h2>
-              <button
-                onclick="document.location='./pages/zoos/cam_panda_online.html'"
-                class="btn_1 btn__wath_online"
-              >
-                wath online
-              </button>
-            </div>
-            <!-- <div class="section__animals_title"></div> -->
-          </div>
-        </section>
-        <section class="secktion__backstage"></section>
-      </main>
-      <div class="footer">
-        <div class="footer__container">
-          <div class="footer__block">
-            <div class="footer__block-left">
-              <div class="footer__logo">
-                <a class="header__logo-link" href="./index.html"
-                  ><img
-                    class="logo-link"
-                    src="./assets/images/svg/logo_footer.svg"
-                    alt="online-zoo logo"
-                /></a>
-              </div>
-              <div class="footer__btn">
-                <button
-                  class="footer__btn-donate btn__fonts-donate"
-                  onclick="document.location='/pages/donate/donate.html'"
-                >
-                  donate for volunteers
-                </button>
-              </div>
-              <div class="footer__block-social">
-                <ul class="footer__social">
-                  <li class="block__social-list social__bg">
-                    <a
-                      class="footer__social-link footer__social-link--bg facebook"
-                      href="https://www.facebook.com/"
-                      >Facebook</a
-                    >
-                  </li>
-                  <li class="block__social-list">
-                    <a
-                      class="footer__social-link footer__social-link--bg twitter"
-                      href="https://twitter.com/"
-                      >Twitter</a
-                    >
-                  </li>
-                  <li class="block__social-list">
-                    <a
-                      class="footer__social-link footer__social-link--bg instagram"
-                      href="https://www.instagram.com/"
-                      >Instagram</a
-                    >
-                  </li>
-                  <li class="block__social-list">
-                    <a
-                      class="footer__social-link footer__social-link--bg youtube"
-                      href="https://www.youtube.com/"
-                      >You Tube</a
-                    >
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div class="footer__block-center">
-              <nav class="block__nav">
-                <ul class="block__nav_menu">
-                  <li class="block__nav_menu-item">
-                    <a
-                      class="block__nav_menu-link link-aktive"
-                      href="./index.html"
-                      >About</a
-                    >
-                  </li>
-                  <li class="block__nav_menu-item">
-                    <a class="block__nav_menu-link" href="./pages/map/map.html"
-                      >Map</a
-                    >
-                  </li>
-                  <li class="block__nav_menu-item">
-                    <a
-                      class="block__nav_menu-link"
-                      href="./pages/zoos/panda.html"
-                      >Zoos</a
-                    >
-                  </li>
-                  <li class="block__nav_menu-item">
-                    <a class="block__nav_menu-link" href="./pages/404.html"
-                      >Contact us</a
-                    >
-                  </li>
-                </ul>
-              </nav>
-            </div>
-            <div class="footer__block-right">
-              <div class="footer__submit">
-                <form action="footer__form-email">
-                  <label class="footer__subscribe-title"
-                    >Subscribe to our news</label
-                  >
-                  <input
-                    required
-                    class="footer__input-email"
-                    type="email"
-                    name=""
-                    id=""
-                    placeholder="Enter your email"
-                  /><button class="footer__btn-submit" type="submit">
-                    Submit
-                  </button>
-                </form>
-              </div>
-              <div class="footer__block-copyright">
-                <div class="disignit footer__text">
-                  <a href="/#" class="copy_link"
-                    >Designed by Alisa Samborskaya</a
-                  >
-                </div>
-                <div class="copyright footer__text">
-                  <a href="/#" class="copy_link"
-                    >©RSSchool & ©Yem Digital 2021</a
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      <main class="main"></main>
+      <footer class="footer"></footer>
     </div>
   </body>
 </html>

@@ -1,0 +1,118 @@
+// @import 'normalize';
+@import '_fonts';
+@import '_reset';
+@import '_mixin';
+
+$bg-header: #000000;
+$bg-fotter: #111115;
+// $bg: #e5e5e5;
+$bg: #ffffff;
+$yellow: #ffee2e;
+$green: #4b9200;
+$black_blue: #333b41;
+$white: #fff;
+$bg-sidebar-icon: #fff;
+$orange: #f9804b;
+
+body {
+  // display: flex;
+  // flex-direction: column;
+  // width: 1600px;
+  // height: 100%;
+  font-family: Roboto;
+  font-style: normal;
+  font-size: 16px;
+  // min-width: 319px;
+  // max-width: 1600px;
+  // margin: 0 auto;
+}
+
+.main {
+  width: 100%;
+  flex: 1 1 auto;
+}
+
+.wrapper {
+  // display: flex;
+  // flex-direction: column;
+  max-width: 1600px;
+  /* justify-content: center; */
+  /* align-items: center; */
+  // width: 1600px;
+  /* align-self: center; */
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  @media (max-width: 1000px) {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  @media (max-width: 640px) {
+    max-width: 640px;
+    margin: 0 auto;
+  }
+  @media (max-width: 320px) {
+    max-width: 320px;
+    margin: 0 auto;
+  }
+}
+
+.block__wrap {
+  width: 1600px;
+}
+
+.container {
+  // display: flex;
+  max-width: 1160px;
+  margin: 0 auto;
+  @media (max-width: 1000px) {
+    max-width: 940px;
+  }
+  @media (max-width: 640px) {
+    max-width: 600px;
+  }
+  @media (max-width: 320px) {
+    max-width: 300px;
+  }
+}
+// main {
+//   height: 100vh;
+// }
+
+.btn__fonts-donate {
+  @include btn-fonts;
+  font-size: 16px;
+  line-height: 140%;
+  text-align: center;
+  text-transform: uppercase;
+  color: $white;
+}
+
+.arrow-l {
+  width: 62px;
+  height: 62px;
+  background: url(./assets/images/svg/button-pets-l-def.svg) no-repeat center;
+  &:active {
+    width: 62px;
+    height: 62px;
+    background: url(./assets/images/svg/button-pets-l-activ.svg) no-repeat
+      center;
+  }
+  &:hover {
+    cursor: pointer;
+  }
+}
+.arrow-r {
+  width: 62px;
+  height: 62px;
+  background: url(./assets/images/svg/button-pets-r-def.svg) no-repeat center;
+  &:active {
+    width: 62px;
+    height: 62px;
+    background: url(./assets/images/svg/button-pets-r-activ.svg) no-repeat
+      center;
+  }
+  &:hover {
+    cursor: pointer;
+  }
+}
